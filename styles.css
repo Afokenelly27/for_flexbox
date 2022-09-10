@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background-color:hsl(0, 0%, 95%) ;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.sedan{
+    background-color: hsl(31, 77%, 52%) ;
+    padding: 2em;
+    max-width: 17em;
+    min-height: 25em;
+    position: relative;
+    border-radius: 8px 0 0 8px;
+}
+p{
+    font-size: 15px;
+    margin-bottom: 6em;
+    margin-top: 1.5em;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 95%);
+    font-weight: 400;
+}
+h1{
+    font-size: 15px;
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+}
+.suv{
+    background-color: hsl(184, 100%, 22%);
+    padding: 2em;
+    max-width: 17em;
+    min-height: 25em;
+    position: relative;
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    padding: 2em;
+    max-width: 17em;
+    min-height: 25em;
+    position: relative;
+    border-radius:0 8px 8px 0 ;
+}
+img{
+    margin-bottom: 1.5em;
+}
+.sedan button{
+    position: absolute;
+    background:  hsl(0, 0%, 95%);
+    border: 2px solid  hsl(0, 0%, 95%);
+    text-align: center;
+    padding: 12px 18px;
+    bottom: 0;
+    margin-bottom: 2em;
+    border-radius: 30px;
+    color:  hsl(31, 77%, 52%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+.suv button{
+    position: absolute;
+    background:  hsl(0, 0%, 95%);
+    border: 2px solid  hsl(0, 0%, 95%);
+    text-align: center;
+    padding: 12px 18px;
+    bottom: 0;
+    margin-bottom: 2em;
+    border-radius: 30px;
+    color:  hsl(184, 100%, 22%);
+    cursor: pointer;
+
+    font-family: 'Lexend Deca', sans-serif;
+}
+.luxury button{
+    position: absolute;
+    background:  hsl(0, 0%, 95%);
+    border: 2px solid  hsl(0, 0%, 95%);
+    text-align: center;
+    padding: 12px 18px;
+    bottom: 0;
+    margin-bottom: 2em;
+    border-radius: 30px;
+    color: hsl(179, 100%, 13%);
+    cursor: pointer;
+
+    font-family: 'Lexend Deca', sans-serif;
+}
+button:hover{
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+@media (max-width:400px){
+    .container{
+        flex-direction: column;
+        padding: 5em 0;
+    }
+    .sedan{
+        min-width: 22em;
+        border-radius: 8px 8px 0 0;
+    }
+    .suv{
+        min-width: 22em;
+    }
+    .luxury{
+        min-width: 22em;
+        border-radius: 0 0 8px 8px;
+    }
+}
